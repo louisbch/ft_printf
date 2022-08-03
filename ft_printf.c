@@ -6,7 +6,7 @@
 /*   By: lbouchon <lbouchon@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/27 12:32:19 by lbouchon          #+#    #+#             */
-/*   Updated: 2022/08/03 12:51:17 by lbouchon         ###   ########.fr       */
+/*   Updated: 2022/08/03 13:07:09 by lbouchon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -56,4 +56,38 @@ int	ft_printf(const char *format, ...)
 	}
 	va_end (args);
 	return (len);
+}
+
+#include <stdio.h>
+
+int main ()
+{
+	char	str[] = "Je vais bien";
+	
+	ft_printf("%s\n", str);
+	printf("%s\n", str);
+	printf("\n");
+	
+	ft_printf("%p\n", "A20456");
+	printf("%p\n", "A20456");
+	printf("\n");
+	
+	ft_printf("%%\n");
+	printf("%%\n");
+	printf("\n");
+	
+	ft_printf("%d\n", 1045);
+	printf("%d\n", 1045);
+	printf("\n");
+	
+	ft_printf("%u\n", 1068);
+	printf("%u\n", 1068);
+	printf("\n");
+	
+	ft_printf("%c\n", 'B');
+	printf("%c\n", 'B');
+	printf("\n");
+	
+	ft_printf("%x\n", 146);
+	printf("%x\n", 146);
 }

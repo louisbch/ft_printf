@@ -6,7 +6,7 @@
 /*   By: lbouchon <lbouchon@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/29 13:53:32 by lbouchon          #+#    #+#             */
-/*   Updated: 2022/08/03 10:55:43 by lbouchon         ###   ########.fr       */
+/*   Updated: 2022/08/03 13:43:31 by lbouchon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,7 +37,7 @@ char	*ft_utoa(unsigned long nb)
 	result[len] = '\0';
 	while (nb != 0)
 	{
-		result[len] = nb % 10 + '0';
+		result[len - 1] = nb % 10 + '0';
 		nb = nb / 10;
 		len--;
 	}

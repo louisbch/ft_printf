@@ -6,7 +6,7 @@
 /*   By: lbouchon <lbouchon@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/02 14:43:40 by lbouchon          #+#    #+#             */
-/*   Updated: 2022/08/03 12:43:11 by lbouchon         ###   ########.fr       */
+/*   Updated: 2022/08/03 13:41:54 by lbouchon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,7 +35,7 @@ void	ft_putptr(unsigned long nb)
 	else
 	{
 		if (nb <= 9)
-			ft_printchar(nb - 10 + '0');
+			ft_printchar(nb + '0');
 		else
 			ft_printchar(nb - 10 + 'a');
 	}
