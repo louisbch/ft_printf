@@ -6,7 +6,7 @@
 /*   By: lbouchon <lbouchon@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/27 12:35:18 by lbouchon          #+#    #+#             */
-/*   Updated: 2022/08/03 10:56:08 by lbouchon         ###   ########.fr       */
+/*   Updated: 2022/08/03 14:21:13 by lbouchon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@
 # include <stdarg.h>
 # include <stdlib.h>
 
-int		ft_printchar(int c);
+int		ft_printchar(char c);
 int		ft_print_perc(void);
 int		ft_printstr(char *str);
 int		ft_search_args(va_list args, const char format);

@@ -6,7 +6,7 @@
 /*   By: lbouchon <lbouchon@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/28 18:26:51 by lbouchon          #+#    #+#             */
-/*   Updated: 2022/08/03 10:44:05 by lbouchon         ###   ########.fr       */
+/*   Updated: 2022/08/03 15:46:17 by lbouchon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,10 +17,12 @@ int	ft_hex_len(unsigned int nb)
 	int	len;
 
 	len = 0;
+	if (nb == 0)
+		return (1);
 	while (nb != 0)
 	{
-		len++;
 		nb = nb / 16;
+		len++;
 	}
 	return (len);
 }

@@ -6,7 +6,7 @@
 #    By: lbouchon <lbouchon@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/07/28 18:12:40 by lbouchon          #+#    #+#              #
-#    Updated: 2022/08/03 12:50:13 by lbouchon         ###   ########.fr        #
+#    Updated: 2022/08/03 16:18:23 by lbouchon         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -18,13 +18,11 @@ NORMINETTE = norminette -R CheckDefine
 
 SRC = \
 			ft_printf.c \
-			ft_printstr.c \
 			ft_utils.c \
 			ft_printptr.c \
-			ft_printstr.c \
 			ft_print_hex.c \
 			ft_print_unsigned.c \
-			
+			ft_printstr.c \
 
 SRCS = ${SRC}
 OBJS = ${SRCS:.c=.o}

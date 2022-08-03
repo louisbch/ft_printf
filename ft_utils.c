@@ -6,7 +6,7 @@
 /*   By: lbouchon <lbouchon@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/28 17:27:07 by lbouchon          #+#    #+#             */
-/*   Updated: 2022/08/03 10:58:12 by lbouchon         ###   ########.fr       */
+/*   Updated: 2022/08/03 16:17:57 by lbouchon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,7 @@ int	ft_printnbr(int nb)
 	return (len);
 }
 
-int	ft_printchar(int c)
+int	ft_printchar(char c)
 {
 	write(1, &c, 1);
 	return (1);
