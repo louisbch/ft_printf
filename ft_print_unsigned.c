@@ -6,7 +6,7 @@
 /*   By: lbouchon <lbouchon@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/29 13:53:32 by lbouchon          #+#    #+#             */
-/*   Updated: 2022/08/03 16:20:22 by lbouchon         ###   ########.fr       */
+/*   Updated: 2022/08/03 16:48:52 by lbouchon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ int	ft_unsigned_len(unsigned int nb)
 	return (len);
 }
 
-char	*ft_utoa(unsigned long nb)
+char	*ft_utoa(unsigned int nb)
 {
 	int		len;
 	char	*result;
