@@ -6,7 +6,7 @@
 /*   By: lbouchon <lbouchon@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/02 14:43:40 by lbouchon          #+#    #+#             */
-/*   Updated: 2022/08/03 10:57:21 by lbouchon         ###   ########.fr       */
+/*   Updated: 2022/08/03 12:43:11 by lbouchon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,6 +46,7 @@ int	ft_printptr(unsigned long nb)
 	int	len;
 
 	len = 0;
+	len += write(1, "0x", 2);
 	if (nb == 0)
 		len += write(1, "0", 1);
 	else

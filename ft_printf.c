@@ -6,7 +6,7 @@
 /*   By: lbouchon <lbouchon@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/27 12:32:19 by lbouchon          #+#    #+#             */
-/*   Updated: 2022/08/03 11:28:41 by lbouchon         ###   ########.fr       */
+/*   Updated: 2022/08/03 12:51:17 by lbouchon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -56,13 +56,4 @@ int	ft_printf(const char *format, ...)
 	}
 	va_end (args);
 	return (len);
-}
-
-int	main()
-{
-	char	str[] = "Je vais manger ce midi...";
-	char 	c = 'A';
-	int 	n = 1268;
-
-	ft_printf("%s\n", str);
 }
