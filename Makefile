@@ -6,17 +6,17 @@
 #    By: lbouchon <lbouchon@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/07/28 18:12:40 by lbouchon          #+#    #+#              #
-#    Updated: 2022/08/03 16:18:23 by lbouchon         ###   ########.fr        #
+#    Updated: 2022/08/08 12:06:24 by lbouchon         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = libftprintf.a
 RM = rm -f
 CC = gcc
-FLAG = -Wall -Wextra -Werror
+FLAGS = -Wall -Wextra -Werror
 NORMINETTE = norminette -R CheckDefine
 
-SRC = \
+SRCS = \
 			ft_printf.c \
 			ft_utils.c \
 			ft_printptr.c \
@@ -24,10 +24,9 @@ SRC = \
 			ft_print_unsigned.c \
 			ft_printstr.c \
 
-SRCS = ${SRC}
 OBJS = ${SRCS:.c=.o}
 
-all = ${NAME}
+all : ${NAME}
 
 ${NAME} : ${OBJS}
 		ar rcs $@ $^
@@ -40,7 +39,7 @@ fclean : clean
 
 re : fclean all
 
-.c.o: ${SRC}
+.c.o: ${SRCS}
 		${CC} ${FLAGS} -c $< -o ${<:.c=.o}
 
 norm :
